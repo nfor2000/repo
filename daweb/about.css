@@ -1,0 +1,73 @@
+.container2{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background: var(--color1opa-);
+}
+.overview{
+    position: relative;
+    max-width: 400px;
+    height: 550px;
+    margin:40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:var(--bgopa-) ;
+    backdrop-filter: blur(10px);
+    padding:20px 40px;
+    gap: 0.5rem;
+    border-radius: 10px;
+}
+.overview h1{
+    font-size: 2rem;
+    color: var(--bg1-);
+}
+.overview .underline{
+    display: block;
+    width: 12rem;
+    height: 5px;
+    background: var(--bg1-);
+    border-radius: 5px;
+}
+.overview img{
+    width:10rem;
+    height: 10rem;
+    border-right: 6px solid var(--bg1-);
+    border-top: 4px solid var(--bg1-);
+    border-radius: 50%;
+}
+.overview h2{
+    color: var(--bg1-);
+}
+.overview p{
+    text-align: center;
+    color: var(--color1-);
+    height: 30%;
+}
+.overview .btns{
+    width: 30%;
+    gap: .5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "dec inc" "view view";
+}
+.btns button{
+    padding: 5px ;
+    border: none;
+    background-color: var(--bgopa-);
+    color: var(--color1-);
+    border-radius: 10px;
+}
+.btns button:hover{
+    background: var(--color1-);
+    color: var(--bgopa-);
+}
+.btns .randombtn{
+    grid-column: view;
+}

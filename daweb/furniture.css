@@ -1,0 +1,124 @@
+.container{
+    position: absolute;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10vh;
+    left: 0;
+    background: var(--bgopa-);
+}
+.slideops{
+    position: absolute;
+    top: 12vh;
+    width: 90%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slidebtn button{
+    background-color: var(--color1-);
+    padding: 4px 10px;
+    border: none;
+    color: var(--bg1-);
+}
+.slidebtn button:hover {
+    color: var(--color1-);
+    background-color: var(--bg1-);
+}
+.numberOfSlides{
+    color: var(--color1-);
+}
+.catalogueBox{
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    animation: animateCatalogue 1000ms ;
+    transition: var(--transition-);
+}
+.catalogue{
+    position: relative;
+    min-height: 360px;
+    width: 320px;
+    background: var(--color1-);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition-);
+}
+.catalogue:hover{
+    background: var(--color1opa-);
+}
+.catalogue img{
+    width: 100%;
+    height: 60%;
+}
+.Bid{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Bid .order{
+    background: var(--bg1-);
+    padding:10px 20px;
+    color: var(--color1-);
+}
+.Bid h2{
+    color: var(--bg1-);
+}
+.Bid h2 span{
+    color: var(--bg1-);
+    font-size: 1.4rem;
+}
+.Bid .order:hover{
+    background: var(--color1-);
+    color: var(--bg1-);
+}
+
+.add-to-cart {
+    width: 80%;
+    background: var(--color1-);
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    color: var(--bg1-);
+    cursor: pointer;
+    border: 2px solid var(--bg1-);
+    transition: var(--transition-);
+    margin:  20px;
+    position: absolute;
+    bottom: 0;
+}
+.add-to-cart .cart{
+    display: block;
+    transition: var(--transition-);
+}
+.add-to-cart:hover {
+    background: var(--bg-);
+    color: var(--color1-);
+}
+.add-to-cart:hover .cart{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+@keyframes animateCatalogue {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.show{
+    display: grid;
+}
